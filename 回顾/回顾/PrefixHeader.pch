@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  回顾
+//
+//  Created by bxkj on 2017/11/21.
+//  Copyright © 2017年 devil. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry.h>
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kNavigationHeight ([[UIScreen mainScreen] bounds].size.height > 736 ? 88 : 64)
+
+#endif /* PrefixHeader_pch */
