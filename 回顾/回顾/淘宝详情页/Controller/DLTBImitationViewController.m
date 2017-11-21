@@ -20,8 +20,6 @@ static NSString * const cellID = @"cellID";
 
 @property(nonatomic,weak) UITableView * tableView;
 
-//@property(nonatomic,weak) UIButton * selectedBtn;
-
 @end
 
 @implementation DLTBImitationViewController{
@@ -37,6 +35,7 @@ static NSString * const cellID = @"cellID";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setTopView];
     [self setTableView];
+    [self setBottomView];
 }
 - (void)setTopView{
     UIView *topView = [[UIView alloc]init];
@@ -65,6 +64,51 @@ static NSString * const cellID = @"cellID";
     tipLine.frame = CGRectMake(5, 37, kScreenWidth / 4.0 - 10, 2);
     [topView addSubview:tipLine];
     self.tipLine = tipLine;
+}
+
+- (void)setBottomView{
+    UIView *bottomView = [[UIView alloc]init];
+    bottomView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:bottomView];
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.height.mas_equalTo(@(kBottomHeight));
+    }];
+    [self setBottomLeftButtonWithIndex:0 title:@"商铺" superView:bottomView];
+    [self setBottomLeftButtonWithIndex:1 title:@"客服" superView:bottomView];
+    [self setBottomLeftButtonWithIndex:2 title:@"收藏" superView:bottomView];
+    
+    [self setBottomRightButtonWithIndex:0 title:@"加入购物车" color:[UIColor colorWithRed:253/255.0 green:179/255.0 blue:43/255.0 alpha:1.0] superView:bottomView];
+    [self setBottomRightButtonWithIndex:1 title:@"立即购买" color:[UIColor colorWithRed:252/255.0 green:96/255.0 blue:32/255.0 alpha:1.0] superView:bottomView];
+}
+
+- (void)setBottomLeftButtonWithIndex:(NSInteger)index title:(NSString *)title superView:(UIView *)superView{
+    UIButton *btn = [[UIButton alloc]init];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    btn.tag = index;
+    [superView addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(superView);
+        make.left.equalTo(superView).offset(index * ((kScreenWidth / 2.0 - 40) / 3.0));
+        make.width.mas_equalTo(@((kScreenWidth / 2.0 - 40) / 3.0));
+    }];
+}
+
+- (void)setBottomRightButtonWithIndex:(NSInteger)index title:(NSString *)title color:(UIColor *)color superView:(UIView *)superView{
+    UIButton *btn = [[UIButton alloc]init];
+    [btn setBackgroundColor:color];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:16.0f];
+    btn.tag = index;
+    [superView addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(superView).offset((kScreenWidth / 2.0) + (index * (kScreenWidth / 2.0 + 40) / 2.0) - 40);
+        make.bottom.top.equalTo(superView);
+        make.width.mas_equalTo(@((kScreenWidth / 2.0 + 40) / 2.0));
+    }];
 }
 
 - (void)setButtonsWithIndex:(NSInteger)index title:(NSString *)title superView:(UIView *)superView{
@@ -132,11 +176,11 @@ static NSString * const cellID = @"cellID";
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     [self.view addSubview:tableView];
     self.tableView = tableView;
-    if (@available(iOS 11.0, *)) {
-        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+//    if (@available(iOS 11.0, *)) {
+//        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    } else {
+//        self.automaticallyAdjustsScrollViewInsets = NO;
+//    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
