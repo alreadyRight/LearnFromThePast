@@ -17,4 +17,12 @@
 
 #define kNavigationHeight ([[UIScreen mainScreen] bounds].size.height > 736 ? 88 : 64)
 
+#define iPhone5s ([[UIScreen mainScreen] bounds].size.height == 568)
+
+#define iPhone6 ([[UIScreen mainScreen] bounds].size.height == 667)
+
+#define iPhone6Plus ([[UIScreen mainScreen] bounds].size.height == 736)
+
+#define iPhoneX ([[UIScreen mainScreen] bounds].size.height == 812)
+
 #endif /* PrefixHeader_pch */
