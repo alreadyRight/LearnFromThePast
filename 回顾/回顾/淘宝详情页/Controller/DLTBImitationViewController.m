@@ -37,9 +37,6 @@ static NSString * const cellID = @"cellID";
     UIButton *_detailBtn;
     UIButton *_msgBtn;
     UIButton *_pushBtn;
-    
-    UIButton *_leftBtn;
-    UIButton *_rightBtn;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -87,7 +84,6 @@ static NSString * const cellID = @"cellID";
         make.width.height.offset(30);
     }];
     UIButton *leftBtn = [[UIButton alloc] init];
-    _leftBtn = leftBtn;
     [leftBtn setTintColor:[UIColor blackColor]];
     UIImage *reftImage = [[UIImage imageNamed:@"circlesmore2_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [leftBtn setImage:reftImage forState:UIControlStateNormal];
@@ -115,7 +111,6 @@ static NSString * const cellID = @"cellID";
     }];
 
     UIButton *rightBtn = [[UIButton alloc] init];
-    _rightBtn = rightBtn;
     [rightBtn setTintColor:[UIColor blackColor]];
     UIImage *rightImage = [[UIImage imageNamed:@"whirfenxiangt_icone"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [rightBtn setImage:rightImage forState:UIControlStateNormal];
@@ -285,6 +280,7 @@ static NSString * const cellID = @"cellID";
 - (void)setTableView{
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kNavigationHeight + kTopViewHeight, kScreenWidth, kScreenHeight - kBottomHeight - kNavigationHeight - kTopViewHeight) style:UITableViewStyleGrouped];
     tableView.backgroundColor = [UIColor clearColor];
+    tableView.showsVerticalScrollIndicator = NO;
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.estimatedRowHeight = 44;

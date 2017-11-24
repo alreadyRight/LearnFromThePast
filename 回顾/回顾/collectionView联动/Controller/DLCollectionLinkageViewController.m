@@ -7,25 +7,98 @@
 //
 
 #import "DLCollectionLinkageViewController.h"
+#import "DLTopFlowLayout.h"
+#import "DLTopCollectionViewCell.h"
+#import "DLDataFlowLayout.h"
+#import "DLDataCollectionViewCell.h"
+#define kTopViewHeight 40
+static NSString * const topCell = @"topCell";
+static NSString * const dataCell = @"dataCell";
+@interface DLCollectionLinkageViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
-@interface DLCollectionLinkageViewController ()
+@property(nonatomic,weak) UICollectionView * topCollectionView;
+
+@property(nonatomic,weak) UICollectionView * dataCollectionView;
+
+@property(nonatomic,weak) UIView * tipLine;
 
 @end
 
-@implementation DLCollectionLinkageViewController
+@implementation DLCollectionLinkageViewController{
+    NSMutableArray *_topArray;
+}
+
+- (void)loadNormalData{
+    if (_topArray == nil) {
+        _topArray = [NSMutableArray array];
+    }
+    for (NSInteger i = 1 ; i <= 20 ; i++ ) {
+        NSString *str = [NSString stringWithFormat:@"第%zd个",i];
+        [_topArray addObject:str];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"联动";
     self.view.backgroundColor = [UIColor whiteColor];
-    NSString *str = @"<p>为群殴IQ我记得群殴我寄刀片群殴我记得</p><p><img src=\"asdasdasdas\" style=\"height: 444;width: 333\"></p>";
-    NSAttributedString *attr = [[NSAttributedString alloc]initWithString:str];
-    NSData *data = [attr dataFromRange:NSMakeRange(0, attr.length) documentAttributes:@{NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType,NSCharacterEncodingDocumentAttribute:[NSNumber numberWithInt:NSUTF8StringEncoding]} error:nil];
-    NSLog(@"%@",data);
-    str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",str);
-    UITextView *textView = [[UITextView alloc]init];
-    textView.attributedText = attr;
+    [self loadNormalData];
+    [self setTopCollection];
+    [self setDataCollection];
+}
+
+- (void)setTopCollection{
+    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kTopViewHeight) collectionViewLayout:[[DLTopFlowLayout alloc]init]];
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    collectionView.backgroundColor = [UIColor whiteColor];
+    [collectionView registerClass:[DLTopCollectionViewCell class] forCellWithReuseIdentifier:topCell];
+    [self.view addSubview:collectionView];
+    self.topCollectionView = collectionView;
+    
+    UIView *line = [[UIView alloc]init];
+    line.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).offset(10);
+        make.right.equalTo(self.view).offset(-8);
+        make.top.equalTo(self.view).offset(41 + kNavigationHeight);
+        make.height.mas_equalTo(@0.3);
+    }];
+    
+    UIView *tipLine = [[UIView alloc]initWithFrame:CGRectMake(2, kNavigationHeight + 40, (kScreenWidth / 5.0 - 4), 2)];
+    tipLine.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:tipLine];
+    self.tipLine = tipLine;
+}
+
+- (void)setDataCollection{
+    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kNavigationHeight + kTopViewHeight + 2, kScreenWidth, kScreenHeight - kNavigationHeight - kTopViewHeight - 2) collectionViewLayout:[[DLDataFlowLayout alloc]init]];
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    collectionView.backgroundColor = [UIColor whiteColor];
+    [collectionView registerClass:[DLDataCollectionViewCell class] forCellWithReuseIdentifier:dataCell];
+    [self.view addSubview:collectionView];
+    self.dataCollectionView = collectionView;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return _topArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (collectionView == self.topCollectionView) {
+        DLTopCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:topCell forIndexPath:indexPath];
+        cell.text = _topArray[indexPath.item];
+        return cell;
+    }else{
+        DLDataCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:dataCell forIndexPath:indexPath];
+        return cell;
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */; };
+		4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0EC8A91FC7E90B00CBB61D /* DLDataFlowLayout.m */; };
 		4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE079F21FC3BC4B008A32D9 /* AppDelegate.m */; };
 		4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE079F51FC3BC4B008A32D9 /* ViewController.m */; };
 		4FE079F91FC3BC4B008A32D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE079F71FC3BC4B008A32D9 /* Main.storyboard */; };
@@ -18,11 +20,17 @@
 		4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A1E1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m */; };
 		4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */; };
 		4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */; };
+		4FF393D21FC6646200992540 /* DLTopFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF393D11FC6646200992540 /* DLTopFlowLayout.m */; };
+		4FF393D81FC69A0A00992540 /* DLTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */; };
 		F879F3E226704BA6275CD69A /* libPods-回顾.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D629CA2F17BAE4067BB898D /* libPods-回顾.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D629CA2F17BAE4067BB898D /* libPods-回顾.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-回顾.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0EC8A51FC7E74400CBB61D /* DLDataCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDataCollectionViewCell.h; sourceTree = "<group>"; };
+		4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDataCollectionViewCell.m; sourceTree = "<group>"; };
+		4F0EC8A81FC7E90B00CBB61D /* DLDataFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDataFlowLayout.h; sourceTree = "<group>"; };
+		4F0EC8A91FC7E90B00CBB61D /* DLDataFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDataFlowLayout.m; sourceTree = "<group>"; };
 		4F2222BF1FC3F0CC001F6614 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4FE079EE1FC3BC4B008A32D9 /* 回顾.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "回顾.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE079F11FC3BC4B008A32D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +51,10 @@
 		4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTimerViewController.m; sourceTree = "<group>"; };
 		4FE07A231FC3BF03008A32D9 /* DLTopSuspensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopSuspensionViewController.h; sourceTree = "<group>"; };
 		4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopSuspensionViewController.m; sourceTree = "<group>"; };
+		4FF393D01FC6646200992540 /* DLTopFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopFlowLayout.h; sourceTree = "<group>"; };
+		4FF393D11FC6646200992540 /* DLTopFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopFlowLayout.m; sourceTree = "<group>"; };
+		4FF393D61FC69A0A00992540 /* DLTopCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopCollectionViewCell.h; sourceTree = "<group>"; };
+		4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopCollectionViewCell.m; sourceTree = "<group>"; };
 		B0CFACB9D09B49EBEE895915 /* Pods-回顾.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-回顾.debug.xcconfig"; path = "Pods/Target Support Files/Pods-回顾/Pods-回顾.debug.xcconfig"; sourceTree = "<group>"; };
 		E55276D4656A1886A54DC329 /* Pods-回顾.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-回顾.release.xcconfig"; path = "Pods/Target Support Files/Pods-回顾/Pods-回顾.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +186,14 @@
 		4FE07A121FC3BE16008A32D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4FF393D01FC6646200992540 /* DLTopFlowLayout.h */,
+				4FF393D11FC6646200992540 /* DLTopFlowLayout.m */,
+				4FF393D61FC69A0A00992540 /* DLTopCollectionViewCell.h */,
+				4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */,
+				4F0EC8A81FC7E90B00CBB61D /* DLDataFlowLayout.h */,
+				4F0EC8A91FC7E90B00CBB61D /* DLDataFlowLayout.m */,
+				4F0EC8A51FC7E74400CBB61D /* DLDataCollectionViewCell.h */,
+				4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,11 +395,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */,
+				4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */,
+				4FF393D21FC6646200992540 /* DLTopFlowLayout.m in Sources */,
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
 				4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
+				4FF393D81FC69A0A00992540 /* DLTopCollectionViewCell.m in Sources */,
 				4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */,
+				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,
 				4FE07A1C1FC3BE9B008A32D9 /* DLTBImitationViewController.m in Sources */,
 			);
