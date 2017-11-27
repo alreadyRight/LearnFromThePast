@@ -22,8 +22,7 @@
 
 - (void)setupUI{
     UILabel *label = [[UILabel alloc]init];
-    label.textColor = [UIColor clearColor];
-    label.backgroundColor = [UIColor whiteColor];
+    label.textColor = [UIColor grayColor];
     label.font = [UIFont systemFontOfSize:14.0f];
     label.textAlignment = NSTextAlignmentCenter;
     [self addSubview:label];
@@ -37,15 +36,15 @@
     _label.text = text;
 }
 
-//- (void)setSelected:(BOOL)selected{
-//    selected = !selected;
-//    if (selected) {
-//        _label.textColor = [UIColor grayColor];
-//        _label.font = [UIFont systemFontOfSize:14.0f];
-//    }else{
-//        _label.textColor = [UIColor orangeColor];
-//        _label.font = [UIFont systemFontOfSize:16.0f];
-//    }
-//}
+- (void)setSelected:(BOOL)selected{
+    selected = !selected;
+    if (selected) {
+        _label.textColor = [UIColor grayColor];
+        _label.font = [UIFont systemFontOfSize:14.0f];
+    }else{
+        _label.textColor = [UIColor orangeColor];
+        _label.font = [UIFont systemFontOfSize:16.0f];
+    }
+}
 
 @end
