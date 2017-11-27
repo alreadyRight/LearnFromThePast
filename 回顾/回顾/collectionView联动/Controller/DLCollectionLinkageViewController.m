@@ -26,6 +26,7 @@ static NSString * const dataCell = @"dataCell";
 
 @implementation DLCollectionLinkageViewController{
     NSMutableArray *_topArray;
+    NSInteger currentItem;
 }
 
 - (void)loadNormalData{
@@ -48,10 +49,14 @@ static NSString * const dataCell = @"dataCell";
 }
 
 - (void)setTopCollection{
+    UIView *tipLine = [[UIView alloc]initWithFrame:CGRectMake(2, kNavigationHeight + 40, (kScreenWidth / 5.0 - 4), 42)];
+    tipLine.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:tipLine];
+    self.tipLine = tipLine;
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kTopViewHeight) collectionViewLayout:[[DLTopFlowLayout alloc]init]];
     collectionView.delegate = self;
     collectionView.dataSource = self;
-    collectionView.backgroundColor = [UIColor whiteColor];
+    collectionView.backgroundColor = [UIColor clearColor];
     [collectionView registerClass:[DLTopCollectionViewCell class] forCellWithReuseIdentifier:topCell];
     [self.view addSubview:collectionView];
     self.topCollectionView = collectionView;
@@ -65,11 +70,6 @@ static NSString * const dataCell = @"dataCell";
         make.top.equalTo(self.view).offset(41 + kNavigationHeight);
         make.height.mas_equalTo(@0.3);
     }];
-    
-    UIView *tipLine = [[UIView alloc]initWithFrame:CGRectMake(2, kNavigationHeight + 40, (kScreenWidth / 5.0 - 4), 2)];
-    tipLine.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:tipLine];
-    self.tipLine = tipLine;
 }
 
 - (void)setDataCollection{
@@ -98,6 +98,20 @@ static NSString * const dataCell = @"dataCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView == self.dataCollectionView) {
+        CGFloat xOffset = scrollView.contentOffset.x / self.dataCollectionView.frame.size.width;
+        [UIView animateWithDuration:0.1 animations:^{
+            [self.topCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:xOffset inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.1 animations:^{
+                [self.topCollectionView selectItemAtIndexPath:[NSIndexPath indexPathForItem:xOffset inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionRight];
+            }];
+        }];
+    }
     
 }
 
