@@ -25,4 +25,11 @@
 
 #define iPhoneX ([[UIScreen mainScreen] bounds].size.height == 812)
 
+#define kScreenScale 1/[UIScreen mainScreen].scale
+
+
+
+
+#import "UIView+DLSize.h"
+
 #endif /* PrefixHeader_pch */

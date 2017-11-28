@@ -20,9 +20,9 @@
 		4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A1E1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m */; };
 		4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */; };
 		4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */; };
-		4FF393D21FC6646200992540 /* DLTopFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF393D11FC6646200992540 /* DLTopFlowLayout.m */; };
-		4FF393D81FC69A0A00992540 /* DLTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */; };
 		634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */; };
+		63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8EE1C1FCCF25800EB2D12 /* BXChannelLabel.m */; };
+		63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8EE201FCCF33600EB2D12 /* UIView+DLSize.m */; };
 		F879F3E226704BA6275CD69A /* libPods-回顾.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D629CA2F17BAE4067BB898D /* libPods-回顾.a */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +52,12 @@
 		4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTimerViewController.m; sourceTree = "<group>"; };
 		4FE07A231FC3BF03008A32D9 /* DLTopSuspensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopSuspensionViewController.h; sourceTree = "<group>"; };
 		4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopSuspensionViewController.m; sourceTree = "<group>"; };
-		4FF393D01FC6646200992540 /* DLTopFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopFlowLayout.h; sourceTree = "<group>"; };
-		4FF393D11FC6646200992540 /* DLTopFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopFlowLayout.m; sourceTree = "<group>"; };
-		4FF393D61FC69A0A00992540 /* DLTopCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTopCollectionViewCell.h; sourceTree = "<group>"; };
-		4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopCollectionViewCell.m; sourceTree = "<group>"; };
 		6343487F1FCBF8A000C9E4F2 /* DLIOS9MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLIOS9MainViewController.h; sourceTree = "<group>"; };
 		634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLIOS9MainViewController.m; sourceTree = "<group>"; };
+		63F8EE1B1FCCF25700EB2D12 /* BXChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXChannelLabel.h; sourceTree = "<group>"; };
+		63F8EE1C1FCCF25800EB2D12 /* BXChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXChannelLabel.m; sourceTree = "<group>"; };
+		63F8EE1F1FCCF33600EB2D12 /* UIView+DLSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DLSize.h"; sourceTree = "<group>"; };
+		63F8EE201FCCF33600EB2D12 /* UIView+DLSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DLSize.m"; sourceTree = "<group>"; };
 		B0CFACB9D09B49EBEE895915 /* Pods-回顾.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-回顾.debug.xcconfig"; path = "Pods/Target Support Files/Pods-回顾/Pods-回顾.debug.xcconfig"; sourceTree = "<group>"; };
 		E55276D4656A1886A54DC329 /* Pods-回顾.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-回顾.release.xcconfig"; path = "Pods/Target Support Files/Pods-回顾/Pods-回顾.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +104,7 @@
 				4FE07A0C1FC3BDB8008A32D9 /* 定时器 */,
 				4FE07A0D1FC3BDC2008A32D9 /* 顶部悬浮 */,
 				6343487B1FCBF84F00C9E4F2 /* iOS9锁屏界面 */,
+				63F8EE1E1FCCF31700EB2D12 /* Category */,
 				4FE079F71FC3BC4B008A32D9 /* Main.storyboard */,
 				4FE079FD1FC3BC4B008A32D9 /* Assets.xcassets */,
 				4FE079FF1FC3BC4B008A32D9 /* LaunchScreen.storyboard */,
@@ -118,8 +119,6 @@
 		4FE07A0A1FC3BD9A008A32D9 /* 淘宝详情页 */ = {
 			isa = PBXGroup;
 			children = (
-				4FE07A0E1FC3BDE3008A32D9 /* Model */,
-				4FE07A0F1FC3BDF6008A32D9 /* View */,
 				4FE07A101FC3BDFD008A32D9 /* Controller */,
 			);
 			path = "淘宝详情页";
@@ -128,7 +127,6 @@
 		4FE07A0B1FC3BDA9008A32D9 /* collectionView联动 */ = {
 			isa = PBXGroup;
 			children = (
-				4FE07A131FC3BE1C008A32D9 /* Model */,
 				4FE07A121FC3BE16008A32D9 /* View */,
 				4FE07A111FC3BE0D008A32D9 /* Controller */,
 			);
@@ -153,20 +151,6 @@
 			path = "顶部悬浮";
 			sourceTree = "<group>";
 		};
-		4FE07A0E1FC3BDE3008A32D9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4FE07A0F1FC3BDF6008A32D9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		4FE07A101FC3BDFD008A32D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,23 +172,14 @@
 		4FE07A121FC3BE16008A32D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4FF393D01FC6646200992540 /* DLTopFlowLayout.h */,
-				4FF393D11FC6646200992540 /* DLTopFlowLayout.m */,
-				4FF393D61FC69A0A00992540 /* DLTopCollectionViewCell.h */,
-				4FF393D71FC69A0A00992540 /* DLTopCollectionViewCell.m */,
+				63F8EE1B1FCCF25700EB2D12 /* BXChannelLabel.h */,
+				63F8EE1C1FCCF25800EB2D12 /* BXChannelLabel.m */,
 				4F0EC8A81FC7E90B00CBB61D /* DLDataFlowLayout.h */,
 				4F0EC8A91FC7E90B00CBB61D /* DLDataFlowLayout.m */,
 				4F0EC8A51FC7E74400CBB61D /* DLDataCollectionViewCell.h */,
 				4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		4FE07A131FC3BE1C008A32D9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		4FE07A141FC3BE23008A32D9 /* Controller */ = {
@@ -270,6 +245,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		63F8EE1E1FCCF31700EB2D12 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				63F8EE1F1FCCF33600EB2D12 /* UIView+DLSize.h */,
+				63F8EE201FCCF33600EB2D12 /* UIView+DLSize.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		D7203C48B6BB5888C071620A /* Pods */ = {
@@ -417,14 +401,14 @@
 			files = (
 				4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */,
 				4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */,
-				4FF393D21FC6646200992540 /* DLTopFlowLayout.m in Sources */,
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
 				4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
+				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
-				4FF393D81FC69A0A00992540 /* DLTopCollectionViewCell.m in Sources */,
 				4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */,
 				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
+				63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */,
 				634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,
 				4FE07A1C1FC3BE9B008A32D9 /* DLTBImitationViewController.m in Sources */,
