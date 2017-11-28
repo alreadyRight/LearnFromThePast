@@ -32,4 +32,6 @@
 
 #import "UIView+DLSize.h"
 
+#import "UIColor+DLAddtion.h"
+
 #endif /* PrefixHeader_pch */
