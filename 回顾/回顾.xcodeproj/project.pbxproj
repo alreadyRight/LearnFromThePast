@@ -410,6 +410,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-回顾/Pods-回顾-resources.sh",
 				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (

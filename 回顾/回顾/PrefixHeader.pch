@@ -27,7 +27,7 @@
 
 #define kScreenScale 1/[UIScreen mainScreen].scale
 
-
+#define WK(weakSelf) __weak __typeof(&*self)weakSelf = self;
 
 
 #import "UIView+DLSize.h"

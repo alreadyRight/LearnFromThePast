@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 @interface AppDelegate ()
+
+@property(nonatomic,strong) BMKMapManager *mapManager;
 
 @end
 
@@ -17,9 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self BMKMapSetup];
     return YES;
 }
 
+- (void)BMKMapSetup{
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:@"cGowlyDe5D6ZkzXLrwD2hNNGoiTVBRAu"generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

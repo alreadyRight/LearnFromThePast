@@ -8,5 +8,6 @@ target '回顾' do
   # Pods for 回顾
 pod 'Masonry'
 pod 'BaiduMapKit'
+pod 'MJRefresh'
 
 end

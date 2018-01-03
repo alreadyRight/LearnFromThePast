@@ -12,6 +12,7 @@
 #import "DLTimerViewController.h"
 #import "DLTopSuspensionViewController.h"
 #import "DLIOS9MainViewController.h"
+#import "DLBaiduMapViewController.h"
 static NSString * const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -104,7 +105,9 @@ static NSString * const cellID = @"cellID";
         case 6:
         {
             //关于百度地图的一些事情
-            
+            DLBaiduMapViewController *mapVC = [[DLBaiduMapViewController alloc]init];
+            [self.navigationController pushViewController:mapVC animated:YES];
+            break;
         }
         default:
             break;

@@ -11,6 +11,7 @@
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
 #import <BaiduMapAPI_Search/BMKGeocodeSearch.h>
 #import <BaiduMapAPI_Search/BMKPoiSearch.h>
+#import "DLMapSearchViewController.h"
 static NSString * const cellID = @"cellID";
 static NSString * const cell2ID = @"cell2ID";
 @interface DLBaiduMapViewController ()<BMKMapViewDelegate,UITableViewDelegate,UITableViewDataSource,BMKLocationServiceDelegate,BMKGeoCodeSearchDelegate>
@@ -39,16 +40,12 @@ static NSString * const cell2ID = @"cell2ID";
 #pragma mark - 监听方法
 
 - (void)clickSearch{
-//    BXMapSearchViewController *mapSearchVC = [[BXMapSearchViewController alloc]init];
-//    mapSearchVC.cityName = _cityName;
-//    [self.navigationController pushViewController:mapSearchVC animated:NO];
-//    mapSearchVC.chooseAddress = ^(CLLocationCoordinate2D pt) {
-//        _pt = pt;
-//    };
-}
-
-- (void)clickRight{
-    
+    DLMapSearchViewController *mapSearchVC = [[DLMapSearchViewController alloc]init];
+    mapSearchVC.cityName = _cityName;
+    [self.navigationController pushViewController:mapSearchVC animated:NO];
+    mapSearchVC.chooseAddress = ^(CLLocationCoordinate2D pt) {
+        _pt = pt;
+    };
 }
 
 #pragma mark - BMKGeoCodeSearchDelegate
@@ -135,6 +132,7 @@ static NSString * const cell2ID = @"cell2ID";
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
     [self.mapView viewWillAppear];
     self.selectIndex = [NSIndexPath indexPathForRow:0 inSection:0];
     self.searcher.delegate = self;
@@ -153,6 +151,7 @@ static NSString * const cell2ID = @"cell2ID";
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"百度地图的使用";
     [self setupSearchView];
     [self setupMapView];
