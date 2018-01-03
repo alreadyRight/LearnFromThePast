@@ -21,6 +21,9 @@
 		4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */; };
 		4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */; };
 		634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */; };
+		63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F119E71FFC6A0000803301 /* DLBaiduMapViewController.m */; };
+		63F119EC1FFC714A00803301 /* DLMapSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F119EB1FFC714A00803301 /* DLMapSearchViewController.m */; };
+		63F119EF1FFC71BF00803301 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F119ED1FFC71BF00803301 /* UIScrollView+Refresh.m */; };
 		63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8EE1C1FCCF25800EB2D12 /* BXChannelLabel.m */; };
 		63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8EE201FCCF33600EB2D12 /* UIView+DLSize.m */; };
 		63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8EE231FCCFA7A00EB2D12 /* UIColor+DLAddtion.m */; };
@@ -56,6 +59,12 @@
 		4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopSuspensionViewController.m; sourceTree = "<group>"; };
 		6343487F1FCBF8A000C9E4F2 /* DLIOS9MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLIOS9MainViewController.h; sourceTree = "<group>"; };
 		634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLIOS9MainViewController.m; sourceTree = "<group>"; };
+		63F119E61FFC6A0000803301 /* DLBaiduMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLBaiduMapViewController.h; sourceTree = "<group>"; };
+		63F119E71FFC6A0000803301 /* DLBaiduMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLBaiduMapViewController.m; sourceTree = "<group>"; };
+		63F119EA1FFC714A00803301 /* DLMapSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLMapSearchViewController.h; sourceTree = "<group>"; };
+		63F119EB1FFC714A00803301 /* DLMapSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMapSearchViewController.m; sourceTree = "<group>"; };
+		63F119ED1FFC71BF00803301 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Refresh.m"; path = "../../../../jdzj/ElectromechanicalHome/ElectromechanicalHome/Tools/UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		63F119EE1FFC71BF00803301 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Refresh.h"; path = "../../../../jdzj/ElectromechanicalHome/ElectromechanicalHome/Tools/UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		63F8EE1B1FCCF25700EB2D12 /* BXChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXChannelLabel.h; sourceTree = "<group>"; };
 		63F8EE1C1FCCF25800EB2D12 /* BXChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXChannelLabel.m; sourceTree = "<group>"; };
 		63F8EE1F1FCCF33600EB2D12 /* UIView+DLSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DLSize.h"; sourceTree = "<group>"; };
@@ -110,6 +119,7 @@
 				4FE07A0C1FC3BDB8008A32D9 /* 定时器 */,
 				4FE07A0D1FC3BDC2008A32D9 /* 顶部悬浮 */,
 				6343487B1FCBF84F00C9E4F2 /* iOS9锁屏界面 */,
+				63F119E51FFC69D500803301 /* 关于百度地图的一些事情 */,
 				63F8EE1E1FCCF31700EB2D12 /* Category */,
 				4FE079F71FC3BC4B008A32D9 /* Main.storyboard */,
 				4FE079FD1FC3BC4B008A32D9 /* Assets.xcassets */,
@@ -150,8 +160,6 @@
 		4FE07A0D1FC3BDC2008A32D9 /* 顶部悬浮 */ = {
 			isa = PBXGroup;
 			children = (
-				4FE07A191FC3BE68008A32D9 /* Model */,
-				4FE07A181FC3BE63008A32D9 /* View */,
 				4FE07A171FC3BE5B008A32D9 /* Controller */,
 			);
 			path = "顶部悬浮";
@@ -208,20 +216,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4FE07A181FC3BE63008A32D9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4FE07A191FC3BE68008A32D9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		6343487B1FCBF84F00C9E4F2 /* iOS9锁屏界面 */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,9 +249,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		63F119E51FFC69D500803301 /* 关于百度地图的一些事情 */ = {
+			isa = PBXGroup;
+			children = (
+				63F119E91FFC711600803301 /* controller */,
+			);
+			path = "关于百度地图的一些事情";
+			sourceTree = "<group>";
+		};
+		63F119E91FFC711600803301 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				63F119E61FFC6A0000803301 /* DLBaiduMapViewController.h */,
+				63F119E71FFC6A0000803301 /* DLBaiduMapViewController.m */,
+				63F119EA1FFC714A00803301 /* DLMapSearchViewController.h */,
+				63F119EB1FFC714A00803301 /* DLMapSearchViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		63F8EE1E1FCCF31700EB2D12 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				63F119EE1FFC71BF00803301 /* UIScrollView+Refresh.h */,
+				63F119ED1FFC71BF00803301 /* UIScrollView+Refresh.m */,
 				63F8EE1F1FCCF33600EB2D12 /* UIView+DLSize.h */,
 				63F8EE201FCCF33600EB2D12 /* UIView+DLSize.m */,
 				63F8EE221FCCFA7A00EB2D12 /* UIColor+DLAddtion.h */,
@@ -393,9 +408,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-回顾/Pods-回顾-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,10 +434,13 @@
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
 				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
+				63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
 				4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */,
 				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
+				63F119EC1FFC714A00803301 /* DLMapSearchViewController.m in Sources */,
 				63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */,
+				63F119EF1FFC71BF00803301 /* UIScrollView+Refresh.m in Sources */,
 				63F8EE271FCCFC8C00EB2D12 /* DLLinkageView.m in Sources */,
 				634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,

@@ -23,7 +23,7 @@ static NSString * const cellID = @"cellID";
 }
 
 - (void)setNormalData{
-    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面"];
+    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"还在构思下一个~~"];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -89,13 +89,25 @@ static NSString * const cellID = @"cellID";
             [self.navigationController pushViewController:tsVC animated:YES];
             break;
         }
-        default:
+        case 4:
         {
             //iOS9锁屏界面
             DLIOS9MainViewController *imVC = [[DLIOS9MainViewController alloc]init];
             [self.navigationController pushViewController:imVC animated:YES];
             break;
         }
+        case 5:
+        {
+            //好看的搜索界面
+            break;
+        }
+        case 6:
+        {
+            //关于百度地图的一些事情
+            
+        }
+        default:
+            break;
     }
 }
 
