@@ -13,6 +13,8 @@
 #import "DLTopSuspensionViewController.h"
 #import "DLIOS9MainViewController.h"
 #import "DLBaiduMapViewController.h"
+#import "DLCustomSingleAlertViewController.h"
+#import "DLCustomDoubleViewController.h"
 static NSString * const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -24,7 +26,7 @@ static NSString * const cellID = @"cellID";
 }
 
 - (void)setNormalData{
-    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"还在构思下一个~~"];
+    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"自定义弹出框",@"自定义弹出框双层夹心",@"还在构思下一个~~"];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -108,6 +110,24 @@ static NSString * const cellID = @"cellID";
             DLBaiduMapViewController *mapVC = [[DLBaiduMapViewController alloc]init];
             [self.navigationController pushViewController:mapVC animated:YES];
             break;
+        }
+        case 7:
+        {
+            //自定义弹出框,可以更改文件,将弹出视图自定义
+            NSArray *array = @[@{@"ID":@"1",@"name":@"张三"},@{@"ID":@"2",@"name":@"李四"},@{@"ID":@"3",@"name":@"王五"},@{@"ID":@"4",@"name":@"赵六"},@{@"ID":@"5",@"name":@"憋七"},@{@"ID":@"6",@"name":@"大巴"}];
+            DLCustomSingleAlertViewController *alert = [[DLCustomSingleAlertViewController alloc]initWithTitle:@"选择名字" dataList:array originID:@"4"];
+            [self presentViewController:alert animated:NO completion:nil];
+            alert.chooseValue = ^(NSString *ID, NSString *name) {
+                DLog(@"%@,%@",ID,name);
+            };
+        }
+        case 8:
+        {
+            DLCustomDoubleViewController *alert = [[DLCustomDoubleViewController alloc]initWithTitle:@"选择一下"];
+            [self presentViewController:alert animated:NO completion:nil];
+            alert.chooseValue = ^(NSString *ID1, NSString *name1, NSString *ID2, NSString *name2) {
+                DLog(@"%@,%@,%@,%@",ID1,name1,ID2,name2);
+            };
         }
         default:
             break;

@@ -34,4 +34,10 @@
 
 #import "UIColor+DLAddtion.h"
 
+#ifdef DEBUG //调试模式
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DLog(...)
+#endif
+
 #endif /* PrefixHeader_pch */
