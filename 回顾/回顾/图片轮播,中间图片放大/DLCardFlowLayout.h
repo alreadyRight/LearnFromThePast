@@ -1,5 +1,5 @@
 //
-//  DLVIPViewController.h
+//  DLCardFlowLayout.h
 //  回顾
 //
 //  Created by 周冰烽 on 2018/2/27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DLVIPViewController : UIViewController
+@interface DLCardFlowLayout : UICollectionViewFlowLayout
 
 @end

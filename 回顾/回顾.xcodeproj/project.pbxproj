@@ -21,7 +21,9 @@
 		4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A211FC3BEDF008A32D9 /* DLTimerViewController.m */; };
 		4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */; };
 		634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */; };
-		6345847D2045420500790FF5 /* DLVIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6345847C2045420500790FF5 /* DLVIPViewController.m */; };
+		63458480204542C900790FF5 /* DLPicLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6345847F204542C900790FF5 /* DLPicLoopViewController.m */; };
+		63458483204543D200790FF5 /* DLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63458482204543D200790FF5 /* DLCardCell.m */; };
+		634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 634584852045440E00790FF5 /* DLCardFlowLayout.m */; };
 		634CFDAA2004583A008EC748 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */; };
 		63D48BE1200F299C00EEF347 /* DLCustomSingleAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D48BE0200F299C00EEF347 /* DLCustomSingleAlertViewController.m */; };
 		63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D48BE3200F2B3200EEF347 /* DLCustomDoubleViewController.m */; };
@@ -63,8 +65,12 @@
 		4FE07A241FC3BF03008A32D9 /* DLTopSuspensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTopSuspensionViewController.m; sourceTree = "<group>"; };
 		6343487F1FCBF8A000C9E4F2 /* DLIOS9MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLIOS9MainViewController.h; sourceTree = "<group>"; };
 		634348801FCBF8A000C9E4F2 /* DLIOS9MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLIOS9MainViewController.m; sourceTree = "<group>"; };
-		6345847B2045420500790FF5 /* DLVIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVIPViewController.h; sourceTree = "<group>"; };
-		6345847C2045420500790FF5 /* DLVIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVIPViewController.m; sourceTree = "<group>"; };
+		6345847E204542C900790FF5 /* DLPicLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPicLoopViewController.h; sourceTree = "<group>"; };
+		6345847F204542C900790FF5 /* DLPicLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLPicLoopViewController.m; sourceTree = "<group>"; };
+		63458481204543D200790FF5 /* DLCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCardCell.h; sourceTree = "<group>"; };
+		63458482204543D200790FF5 /* DLCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardCell.m; sourceTree = "<group>"; };
+		634584842045440E00790FF5 /* DLCardFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCardFlowLayout.h; sourceTree = "<group>"; };
+		634584852045440E00790FF5 /* DLCardFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardFlowLayout.m; sourceTree = "<group>"; };
 		634CFDA82004583A008EC748 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		63D48BDF200F299C00EEF347 /* DLCustomSingleAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCustomSingleAlertViewController.h; sourceTree = "<group>"; };
@@ -266,8 +272,12 @@
 		6345847A204541E000790FF5 /* 图片轮播,中间图片放大 */ = {
 			isa = PBXGroup;
 			children = (
-				6345847B2045420500790FF5 /* DLVIPViewController.h */,
-				6345847C2045420500790FF5 /* DLVIPViewController.m */,
+				6345847E204542C900790FF5 /* DLPicLoopViewController.h */,
+				6345847F204542C900790FF5 /* DLPicLoopViewController.m */,
+				634584842045440E00790FF5 /* DLCardFlowLayout.h */,
+				634584852045440E00790FF5 /* DLCardFlowLayout.m */,
+				63458481204543D200790FF5 /* DLCardCell.h */,
+				63458482204543D200790FF5 /* DLCardCell.m */,
 			);
 			path = "图片轮播,中间图片放大";
 			sourceTree = "<group>";
@@ -469,13 +479,14 @@
 				4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */,
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
 				4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */,
+				63458483204543D200790FF5 /* DLCardCell.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
 				63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
-				6345847D2045420500790FF5 /* DLVIPViewController.m in Sources */,
 				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
 				63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
+				63458480204542C900790FF5 /* DLPicLoopViewController.m in Sources */,
 				4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */,
 				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
 				63F119EC1FFC714A00803301 /* DLMapSearchViewController.m in Sources */,
@@ -484,6 +495,7 @@
 				634CFDAA2004583A008EC748 /* UIScrollView+Refresh.m in Sources */,
 				63F8EE271FCCFC8C00EB2D12 /* DLLinkageView.m in Sources */,
 				634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */,
+				634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,
 				4FE07A1C1FC3BE9B008A32D9 /* DLTBImitationViewController.m in Sources */,
 			);

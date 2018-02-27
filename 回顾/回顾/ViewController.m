@@ -15,6 +15,7 @@
 #import "DLBaiduMapViewController.h"
 #import "DLCustomSingleAlertViewController.h"
 #import "DLCustomDoubleViewController.h"
+#import "DLPicLoopViewController.h"
 static NSString * const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -133,6 +134,8 @@ static NSString * const cellID = @"cellID";
         }
         case 9:
         {
+            DLPicLoopViewController *picLoopVC = [[DLPicLoopViewController alloc]init];
+            [self.navigationController pushViewController:picLoopVC animated:YES];
             break;
         }
         default:
