@@ -26,7 +26,7 @@ static NSString * const cellID = @"cellID";
 }
 
 - (void)setNormalData{
-    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"自定义弹出框",@"自定义弹出框双层夹心",@"还在构思下一个~~"];
+    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"自定义弹出框",@"自定义弹出框双层夹心",@"图片轮播,中间图片放大",@"还在构思下一个~~"];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -120,6 +120,7 @@ static NSString * const cellID = @"cellID";
             alert.chooseValue = ^(NSString *ID, NSString *name) {
                 DLog(@"%@,%@",ID,name);
             };
+            break;
         }
         case 8:
         {
@@ -128,6 +129,11 @@ static NSString * const cellID = @"cellID";
             alert.chooseValue = ^(NSString *ID1, NSString *name1, NSString *ID2, NSString *name2) {
                 DLog(@"%@,%@,%@,%@",ID1,name1,ID2,name2);
             };
+            break;
+        }
+        case 9:
+        {
+            break;
         }
         default:
             break;
