@@ -25,6 +25,10 @@
 		63458483204543D200790FF5 /* DLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63458482204543D200790FF5 /* DLCardCell.m */; };
 		634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 634584852045440E00790FF5 /* DLCardFlowLayout.m */; };
 		634CFDAA2004583A008EC748 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */; };
+		63B6B3BF20BF912900DEA117 /* DLAlignmentFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BA20BF912900DEA117 /* DLAlignmentFlowLayout.m */; };
+		63B6B3C020BF912900DEA117 /* DLSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BC20BF912900DEA117 /* DLSearchCollectionViewCell.m */; };
+		63B6B3C120BF912900DEA117 /* DLSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BD20BF912900DEA117 /* DLSearchTableViewCell.m */; };
+		63B6B3C220BF912900DEA117 /* DLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BE20BF912900DEA117 /* DLSearchViewController.m */; };
 		63D48BE1200F299C00EEF347 /* DLCustomSingleAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D48BE0200F299C00EEF347 /* DLCustomSingleAlertViewController.m */; };
 		63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D48BE3200F2B3200EEF347 /* DLCustomDoubleViewController.m */; };
 		63D48BE7200F2BA300EEF347 /* DLBaseAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D48BE6200F2BA300EEF347 /* DLBaseAlertViewController.m */; };
@@ -73,6 +77,14 @@
 		634584852045440E00790FF5 /* DLCardFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardFlowLayout.m; sourceTree = "<group>"; };
 		634CFDA82004583A008EC748 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		63B6B3B620BF912900DEA117 /* DLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchViewController.h; sourceTree = "<group>"; };
+		63B6B3B820BF912900DEA117 /* DLSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchTableViewCell.h; sourceTree = "<group>"; };
+		63B6B3B920BF912900DEA117 /* DLSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchCollectionViewCell.h; sourceTree = "<group>"; };
+		63B6B3BA20BF912900DEA117 /* DLAlignmentFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAlignmentFlowLayout.m; sourceTree = "<group>"; };
+		63B6B3BB20BF912900DEA117 /* DLAlignmentFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAlignmentFlowLayout.h; sourceTree = "<group>"; };
+		63B6B3BC20BF912900DEA117 /* DLSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSearchCollectionViewCell.m; sourceTree = "<group>"; };
+		63B6B3BD20BF912900DEA117 /* DLSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSearchTableViewCell.m; sourceTree = "<group>"; };
+		63B6B3BE20BF912900DEA117 /* DLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSearchViewController.m; sourceTree = "<group>"; };
 		63D48BDF200F299C00EEF347 /* DLCustomSingleAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCustomSingleAlertViewController.h; sourceTree = "<group>"; };
 		63D48BE0200F299C00EEF347 /* DLCustomSingleAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCustomSingleAlertViewController.m; sourceTree = "<group>"; };
 		63D48BE2200F2B3200EEF347 /* DLCustomDoubleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCustomDoubleViewController.h; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 				4FE079F21FC3BC4B008A32D9 /* AppDelegate.m */,
 				4FE079F41FC3BC4B008A32D9 /* ViewController.h */,
 				4FE079F51FC3BC4B008A32D9 /* ViewController.m */,
+				63B6B3B520BF912900DEA117 /* 好看的搜索界面 */,
 				4FE07A0A1FC3BD9A008A32D9 /* 淘宝详情页 */,
 				4FE07A0B1FC3BDA9008A32D9 /* collectionView联动 */,
 				4FE07A0C1FC3BDB8008A32D9 /* 定时器 */,
@@ -280,6 +293,29 @@
 				63458482204543D200790FF5 /* DLCardCell.m */,
 			);
 			path = "图片轮播,中间图片放大";
+			sourceTree = "<group>";
+		};
+		63B6B3B520BF912900DEA117 /* 好看的搜索界面 */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B3B620BF912900DEA117 /* DLSearchViewController.h */,
+				63B6B3BE20BF912900DEA117 /* DLSearchViewController.m */,
+				63B6B3B720BF912900DEA117 /* View */,
+			);
+			path = "好看的搜索界面";
+			sourceTree = "<group>";
+		};
+		63B6B3B720BF912900DEA117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B3BB20BF912900DEA117 /* DLAlignmentFlowLayout.h */,
+				63B6B3BA20BF912900DEA117 /* DLAlignmentFlowLayout.m */,
+				63B6B3B820BF912900DEA117 /* DLSearchTableViewCell.h */,
+				63B6B3BD20BF912900DEA117 /* DLSearchTableViewCell.m */,
+				63B6B3B920BF912900DEA117 /* DLSearchCollectionViewCell.h */,
+				63B6B3BC20BF912900DEA117 /* DLSearchCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		63D48BDE200F296E00EEF347 /* 自定义弹出框 */ = {
@@ -474,7 +510,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B6B3C220BF912900DEA117 /* DLSearchViewController.m in Sources */,
 				4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */,
+				63B6B3BF20BF912900DEA117 /* DLAlignmentFlowLayout.m in Sources */,
 				63D48BE1200F299C00EEF347 /* DLCustomSingleAlertViewController.m in Sources */,
 				4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */,
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
@@ -483,6 +521,7 @@
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
 				63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
+				63B6B3C020BF912900DEA117 /* DLSearchCollectionViewCell.m in Sources */,
 				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
 				63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
@@ -498,6 +537,7 @@
 				634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,
 				4FE07A1C1FC3BE9B008A32D9 /* DLTBImitationViewController.m in Sources */,
+				63B6B3C120BF912900DEA117 /* DLSearchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

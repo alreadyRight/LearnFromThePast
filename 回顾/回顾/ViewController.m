@@ -16,6 +16,7 @@
 #import "DLCustomSingleAlertViewController.h"
 #import "DLCustomDoubleViewController.h"
 #import "DLPicLoopViewController.h"
+#import "DLSearchViewController.h"
 static NSString * const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -103,6 +104,8 @@ static NSString * const cellID = @"cellID";
         case 5:
         {
             //好看的搜索界面
+            DLSearchViewController *searchVC = [[DLSearchViewController alloc]init];
+            [self.navigationController pushViewController:searchVC animated:NO];
             break;
         }
         case 6:
