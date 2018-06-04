@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4A09D420C0D91F00F9A1F0 /* DLTimerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */; };
+		1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */; };
 		4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */; };
 		4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0EC8A91FC7E90B00CBB61D /* DLDataFlowLayout.m */; };
 		4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE079F21FC3BC4B008A32D9 /* AppDelegate.m */; };
@@ -43,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		0D629CA2F17BAE4067BB898D /* libPods-回顾.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-回顾.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4A09D220C0D91F00F9A1F0 /* DLTimerFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTimerFlowLayout.h; sourceTree = "<group>"; };
+		1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTimerFlowLayout.m; sourceTree = "<group>"; };
+		1B4A09D520C0D93500F9A1F0 /* DLTimerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTimerCollectionViewCell.h; sourceTree = "<group>"; };
+		1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTimerCollectionViewCell.m; sourceTree = "<group>"; };
 		4F0EC8A51FC7E74400CBB61D /* DLDataCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDataCollectionViewCell.h; sourceTree = "<group>"; };
 		4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDataCollectionViewCell.m; sourceTree = "<group>"; };
 		4F0EC8A81FC7E90B00CBB61D /* DLDataFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDataFlowLayout.h; sourceTree = "<group>"; };
@@ -119,6 +125,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4A09D120C0D8E000F9A1F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A09D220C0D91F00F9A1F0 /* DLTimerFlowLayout.h */,
+				1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */,
+				1B4A09D520C0D93500F9A1F0 /* DLTimerCollectionViewCell.h */,
+				1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4FE079E51FC3BC4B008A32D9 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +202,7 @@
 		4FE07A0C1FC3BDB8008A32D9 /* 定时器 */ = {
 			isa = PBXGroup;
 			children = (
+				1B4A09D120C0D8E000F9A1F0 /* View */,
 				4FE07A141FC3BE23008A32D9 /* Controller */,
 			);
 			path = "定时器";
@@ -518,6 +536,7 @@
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
 				4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */,
 				63458483204543D200790FF5 /* DLCardCell.m in Sources */,
+				1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
 				63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
@@ -530,6 +549,7 @@
 				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
 				63F119EC1FFC714A00803301 /* DLMapSearchViewController.m in Sources */,
 				63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */,
+				1B4A09D420C0D91F00F9A1F0 /* DLTimerFlowLayout.m in Sources */,
 				63D48BE7200F2BA300EEF347 /* DLBaseAlertViewController.m in Sources */,
 				634CFDAA2004583A008EC748 /* UIScrollView+Refresh.m in Sources */,
 				63F8EE271FCCFC8C00EB2D12 /* DLLinkageView.m in Sources */,

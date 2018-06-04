@@ -7,16 +7,72 @@
 //
 
 #import "DLTimerViewController.h"
+#import "DLTimerFlowLayout.h"
+#import "DLTimerCollectionViewCell.h"
 
-@interface DLTimerViewController ()
+NSString * const timerCell = @"timerCell";
+
+@interface DLTimerViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property(nonatomic,strong)NSArray * dataList;
 
 @end
 
 @implementation DLTimerViewController
 
+
+#pragma mark LifeCircle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"定时器";
+    [self setupCircleView];
+    
 }
+
+
+#pragma mark UI
+- (void)setupCircleView{
+    DLTimerFlowLayout *fl = [[DLTimerFlowLayout alloc]init];
+    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 256, 40) collectionViewLayout:fl];
+    collectionView.backgroundColor = UIColor.yellowColor;
+//    collectionView.scrollEnabled = NO;
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    [collectionView registerClass:[DLTimerCollectionViewCell class] forCellWithReuseIdentifier:timerCell];
+    [self.view addSubview:collectionView];
+    [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.mas_equalTo(@256);
+        make.height.mas_equalTo(@40);
+    }];
+}
+
+#pragma mark UICollectionViewDelegate && dataSource
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return self.dataList.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    DLTimerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:timerCell forIndexPath:indexPath];
+    cell.word = self.dataList[indexPath.row];
+    return cell;
+}
+
+
+#pragma mark LazyLoad
+
+- (NSArray *)dataList{
+    if (!_dataList) {
+        _dataList = @[@"第五季开始了",@"单位都爱玩打破胃口多交往",@"我都激动啊山东按揭贷款和窦唯",@"我无爱啊实打实加快进",@"到死刷卡老师的黑娃"];
+    }
+    return _dataList;
+}
+
 
 @end
