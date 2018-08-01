@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEE96442111B31B00FA9D4F /* DLImageHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */; };
 		1B4A09D420C0D91F00F9A1F0 /* DLTimerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */; };
 		1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */; };
 		4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0EC8A61FC7E74400CBB61D /* DLDataCollectionViewCell.m */; };
@@ -44,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AEE96422111B31B00FA9D4F /* DLImageHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageHeaderCell.h; sourceTree = "<group>"; };
+		0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageHeaderCell.m; sourceTree = "<group>"; };
 		0D629CA2F17BAE4067BB898D /* libPods-回顾.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-回顾.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4A09D220C0D91F00F9A1F0 /* DLTimerFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTimerFlowLayout.h; sourceTree = "<group>"; };
 		1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTimerFlowLayout.m; sourceTree = "<group>"; };
@@ -125,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AEE96412111B2C800FA9D4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AEE96422111B31B00FA9D4F /* DLImageHeaderCell.h */,
+				0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1B4A09D120C0D8E000F9A1F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +223,7 @@
 		4FE07A0D1FC3BDC2008A32D9 /* 顶部悬浮 */ = {
 			isa = PBXGroup;
 			children = (
+				0AEE96412111B2C800FA9D4F /* View */,
 				4FE07A171FC3BE5B008A32D9 /* Controller */,
 			);
 			path = "顶部悬浮";
@@ -538,6 +551,7 @@
 				63458483204543D200790FF5 /* DLCardCell.m in Sources */,
 				1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
+				0AEE96442111B31B00FA9D4F /* DLImageHeaderCell.m in Sources */,
 				63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
 				63B6B3C020BF912900DEA117 /* DLSearchCollectionViewCell.m in Sources */,
