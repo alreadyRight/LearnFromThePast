@@ -16,6 +16,12 @@ NSString * const timerCell = @"timerCell";
 
 @property(nonatomic,strong)NSArray * dataList;
 
+@property (nonatomic, weak)UICollectionView * collectionView;
+
+@property (nonatomic, strong)NSTimer * timer;
+
+@property (nonatomic, assign)NSInteger page;
+
 @end
 
 @implementation DLTimerViewController
@@ -24,12 +30,28 @@ NSString * const timerCell = @"timerCell";
 #pragma mark LifeCircle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.page = 0;
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"定时器";
     [self setupCircleView];
-    
+    [self startTimeInterval];
 }
 
+- (void)startTimeInterval{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(startRun) userInfo:nil repeats:YES];
+}
+
+- (void)startRun{
+    if (self.page == self.dataList.count) {
+        self.page = 0;
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.page inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
+    }
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.page++ inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+}
+
+- (void)dealloc{
+    [self.timer invalidate];
+}
 
 #pragma mark UI
 - (void)setupCircleView{
@@ -46,6 +68,7 @@ NSString * const timerCell = @"timerCell";
         make.width.mas_equalTo(@256);
         make.height.mas_equalTo(@40);
     }];
+    self.collectionView = collectionView;
 }
 
 #pragma mark UICollectionViewDelegate && dataSource
