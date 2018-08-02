@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A20C1632112965C00D631F2 /* DLCollectionBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C1622112965C00D631F2 /* DLCollectionBottomCell.m */; };
+		0A20C166211296C600D631F2 /* DLCollectionBottomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C165211296C600D631F2 /* DLCollectionBottomFlowLayout.m */; };
+		0A20C16921129BCF00D631F2 /* DLCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C16821129BCF00D631F2 /* DLCollectionTableViewCell.m */; };
 		0AEE96442111B31B00FA9D4F /* DLImageHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */; };
 		1B4A09D420C0D91F00F9A1F0 /* DLTimerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */; };
 		1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */; };
@@ -45,6 +48,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A20C1612112965C00D631F2 /* DLCollectionBottomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionBottomCell.h; sourceTree = "<group>"; };
+		0A20C1622112965C00D631F2 /* DLCollectionBottomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCollectionBottomCell.m; sourceTree = "<group>"; };
+		0A20C164211296C600D631F2 /* DLCollectionBottomFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionBottomFlowLayout.h; sourceTree = "<group>"; };
+		0A20C165211296C600D631F2 /* DLCollectionBottomFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCollectionBottomFlowLayout.m; sourceTree = "<group>"; };
+		0A20C16721129BCF00D631F2 /* DLCollectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionTableViewCell.h; sourceTree = "<group>"; };
+		0A20C16821129BCF00D631F2 /* DLCollectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCollectionTableViewCell.m; sourceTree = "<group>"; };
 		0AEE96422111B31B00FA9D4F /* DLImageHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageHeaderCell.h; sourceTree = "<group>"; };
 		0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageHeaderCell.m; sourceTree = "<group>"; };
 		0D629CA2F17BAE4067BB898D /* libPods-回顾.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-回顾.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +142,12 @@
 			children = (
 				0AEE96422111B31B00FA9D4F /* DLImageHeaderCell.h */,
 				0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */,
+				0A20C1612112965C00D631F2 /* DLCollectionBottomCell.h */,
+				0A20C1622112965C00D631F2 /* DLCollectionBottomCell.m */,
+				0A20C164211296C600D631F2 /* DLCollectionBottomFlowLayout.h */,
+				0A20C165211296C600D631F2 /* DLCollectionBottomFlowLayout.m */,
+				0A20C16721129BCF00D631F2 /* DLCollectionTableViewCell.h */,
+				0A20C16821129BCF00D631F2 /* DLCollectionTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,6 +560,7 @@
 				4FE07A1F1FC3BED3008A32D9 /* DLCollectionLinkageViewController.m in Sources */,
 				63B6B3BF20BF912900DEA117 /* DLAlignmentFlowLayout.m in Sources */,
 				63D48BE1200F299C00EEF347 /* DLCustomSingleAlertViewController.m in Sources */,
+				0A20C1632112965C00D631F2 /* DLCollectionBottomCell.m in Sources */,
 				4F0EC8AA1FC7E90B00CBB61D /* DLDataFlowLayout.m in Sources */,
 				4FE079FC1FC3BC4B008A32D9 /* __.xcdatamodeld in Sources */,
 				4FE079F61FC3BC4B008A32D9 /* ViewController.m in Sources */,
@@ -558,8 +574,10 @@
 				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
 				63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
+				0A20C166211296C600D631F2 /* DLCollectionBottomFlowLayout.m in Sources */,
 				63458480204542C900790FF5 /* DLPicLoopViewController.m in Sources */,
 				4FE07A221FC3BEDF008A32D9 /* DLTimerViewController.m in Sources */,
+				0A20C16921129BCF00D631F2 /* DLCollectionTableViewCell.m in Sources */,
 				4F0EC8A71FC7E74400CBB61D /* DLDataCollectionViewCell.m in Sources */,
 				63F119EC1FFC714A00803301 /* DLMapSearchViewController.m in Sources */,
 				63F8EE211FCCF33600EB2D12 /* UIView+DLSize.m in Sources */,
