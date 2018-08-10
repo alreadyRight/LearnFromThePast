@@ -17,6 +17,9 @@
 #import "DLCustomDoubleViewController.h"
 #import "DLPicLoopViewController.h"
 #import "DLSearchViewController.h"
+
+#import <LocalAuthentication/LocalAuthentication.h>
+
 static NSString * const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -39,8 +42,84 @@ static NSString * const cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Main";
-    [self setNormalData];
-    [self setTableView];
+    [self fingerprintUnlock];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self setNormalData];
+        [self setTableView];
+    });
+    
+}
+
+- (void)fingerprintUnlock{
+    LAContext *context = [[LAContext alloc]init];
+    NSError *error;
+    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
+        //支持指纹解锁的机型
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"请按住Home键解锁" reply:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                NSLog(@"指纹解锁成功");
+            }else{
+                NSLog(@"%@",error.localizedDescription);
+                switch (error.code) {
+                    case LAErrorSystemCancel:
+                        NSLog(@"系统取消授权，如其他APP切入");
+                        break;
+                    case LAErrorUserCancel:
+                        NSLog(@"用户取消验证Touch ID");
+                        break;
+                    case LAErrorAuthenticationFailed:
+                        NSLog(@"授权失败");
+                        break;
+                    case LAErrorPasscodeNotSet:
+                        NSLog(@"系统未设置密码");
+                        break;
+                    case LAErrorTouchIDNotAvailable:
+                        NSLog(@"设备Touch ID不可用，例如未打开");
+                        break;
+                    case LAErrorTouchIDNotEnrolled:
+                        NSLog(@"设备Touch ID不可用，用户未录入");
+                        break;
+                    case LAErrorUserFallback:
+                    {
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            NSLog(@"用户选择输入密码，切换主线程处理");
+                            [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"请输入设备密码" reply:^(BOOL success, NSError * _Nullable error) {
+                                NSLog(@"error = %@", error);
+                            }];
+                        }];
+                        break;
+                    }
+                    default:
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            NSLog(@"其他情况，切换主线程处理");
+                        }];
+                        break;
+                }
+            }
+        }];
+    }else{
+        //不支持指纹解锁的机型
+        NSLog(@"不支持指纹识别");
+        switch (error.code) {
+            case LAErrorTouchIDNotEnrolled:
+            {
+                NSLog(@"TouchID is not enrolled");
+                break;
+            }
+            case LAErrorPasscodeNotSet:
+            {
+                NSLog(@"A passcode has not been set");
+                break;
+            }
+            default:
+            {
+                NSLog(@"TouchID not available");
+                break;
+            }
+        }
+        
+        NSLog(@"%@",error.localizedDescription);
+    }
 }
 
 - (void)setTableView{
