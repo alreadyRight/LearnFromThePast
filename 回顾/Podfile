@@ -9,5 +9,7 @@ target '回顾' do
 pod 'Masonry'
 pod 'BaiduMapKit'
 pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
 
 end

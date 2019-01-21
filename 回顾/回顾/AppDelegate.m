@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DLOpenAttachmentViewController.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 @interface AppDelegate ()
 
@@ -29,6 +30,11 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+	NSLog(@"%@",url);
+	return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

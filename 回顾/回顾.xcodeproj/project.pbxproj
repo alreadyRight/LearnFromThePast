@@ -10,6 +10,11 @@
 		0A20C1632112965C00D631F2 /* DLCollectionBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C1622112965C00D631F2 /* DLCollectionBottomCell.m */; };
 		0A20C166211296C600D631F2 /* DLCollectionBottomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C165211296C600D631F2 /* DLCollectionBottomFlowLayout.m */; };
 		0A20C16921129BCF00D631F2 /* DLCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20C16821129BCF00D631F2 /* DLCollectionTableViewCell.m */; };
+		0A6175DF21F05E6500ADC135 /* DLImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6175DE21F05E6500ADC135 /* DLImageViewerViewController.m */; };
+		0A6175E221F0612900ADC135 /* DLImageViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6175E121F0612900ADC135 /* DLImageViewCollectionViewCell.m */; };
+		0A6175E621F061D000ADC135 /* DLImageViewerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6175E521F061D000ADC135 /* DLImageViewerFlowLayout.m */; };
+		0AC8FB5721EF19A0005279A4 /* DLOpenAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8FB5621EF19A0005279A4 /* DLOpenAttachmentViewController.m */; };
+		0AC8FB5A21EF20BA005279A4 /* 附件.docx in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8FB5921EF20BA005279A4 /* 附件.docx */; };
 		0AEE96442111B31B00FA9D4F /* DLImageHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */; };
 		1B4A09D420C0D91F00F9A1F0 /* DLTimerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D320C0D91F00F9A1F0 /* DLTimerFlowLayout.m */; };
 		1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A09D620C0D93500F9A1F0 /* DLTimerCollectionViewCell.m */; };
@@ -54,6 +59,15 @@
 		0A20C165211296C600D631F2 /* DLCollectionBottomFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCollectionBottomFlowLayout.m; sourceTree = "<group>"; };
 		0A20C16721129BCF00D631F2 /* DLCollectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionTableViewCell.h; sourceTree = "<group>"; };
 		0A20C16821129BCF00D631F2 /* DLCollectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCollectionTableViewCell.m; sourceTree = "<group>"; };
+		0A6175DD21F05E6500ADC135 /* DLImageViewerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageViewerViewController.h; sourceTree = "<group>"; };
+		0A6175DE21F05E6500ADC135 /* DLImageViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageViewerViewController.m; sourceTree = "<group>"; };
+		0A6175E021F0612900ADC135 /* DLImageViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageViewCollectionViewCell.h; sourceTree = "<group>"; };
+		0A6175E121F0612900ADC135 /* DLImageViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageViewCollectionViewCell.m; sourceTree = "<group>"; };
+		0A6175E421F061D000ADC135 /* DLImageViewerFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageViewerFlowLayout.h; sourceTree = "<group>"; };
+		0A6175E521F061D000ADC135 /* DLImageViewerFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageViewerFlowLayout.m; sourceTree = "<group>"; };
+		0AC8FB5521EF19A0005279A4 /* DLOpenAttachmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLOpenAttachmentViewController.h; sourceTree = "<group>"; };
+		0AC8FB5621EF19A0005279A4 /* DLOpenAttachmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLOpenAttachmentViewController.m; sourceTree = "<group>"; };
+		0AC8FB5921EF20BA005279A4 /* 附件.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "附件.docx"; sourceTree = "<group>"; };
 		0AEE96422111B31B00FA9D4F /* DLImageHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLImageHeaderCell.h; sourceTree = "<group>"; };
 		0AEE96432111B31B00FA9D4F /* DLImageHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLImageHeaderCell.m; sourceTree = "<group>"; };
 		0D629CA2F17BAE4067BB898D /* libPods-回顾.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-回顾.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +151,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6175DC21F05E4700ADC135 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				0A6175E321F0613000ADC135 /* View */,
+				0A6175DD21F05E6500ADC135 /* DLImageViewerViewController.h */,
+				0A6175DE21F05E6500ADC135 /* DLImageViewerViewController.m */,
+			);
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		0A6175E321F0613000ADC135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6175E021F0612900ADC135 /* DLImageViewCollectionViewCell.h */,
+				0A6175E121F0612900ADC135 /* DLImageViewCollectionViewCell.m */,
+				0A6175E421F061D000ADC135 /* DLImageViewerFlowLayout.h */,
+				0A6175E521F061D000ADC135 /* DLImageViewerFlowLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AC8FB5421EF1968005279A4 /* 附件打开 */ = {
+			isa = PBXGroup;
+			children = (
+				0AC8FB5521EF19A0005279A4 /* DLOpenAttachmentViewController.h */,
+				0AC8FB5621EF19A0005279A4 /* DLOpenAttachmentViewController.m */,
+			);
+			path = "附件打开";
+			sourceTree = "<group>";
+		};
 		0AEE96412111B2C800FA9D4F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,10 +228,12 @@
 		4FE079F01FC3BC4B008A32D9 /* 回顾 */ = {
 			isa = PBXGroup;
 			children = (
+				0AC8FB5921EF20BA005279A4 /* 附件.docx */,
 				4FE079F11FC3BC4B008A32D9 /* AppDelegate.h */,
 				4FE079F21FC3BC4B008A32D9 /* AppDelegate.m */,
 				4FE079F41FC3BC4B008A32D9 /* ViewController.h */,
 				4FE079F51FC3BC4B008A32D9 /* ViewController.m */,
+				0A6175DC21F05E4700ADC135 /* ImageViewer */,
 				63B6B3B520BF912900DEA117 /* 好看的搜索界面 */,
 				4FE07A0A1FC3BD9A008A32D9 /* 淘宝详情页 */,
 				4FE07A0B1FC3BDA9008A32D9 /* collectionView联动 */,
@@ -198,6 +244,7 @@
 				63F8EE1E1FCCF31700EB2D12 /* Category */,
 				63D48BDE200F296E00EEF347 /* 自定义弹出框 */,
 				6345847A204541E000790FF5 /* 图片轮播,中间图片放大 */,
+				0AC8FB5421EF1968005279A4 /* 附件打开 */,
 				4FE079F71FC3BC4B008A32D9 /* Main.storyboard */,
 				4FE079FD1FC3BC4B008A32D9 /* Assets.xcassets */,
 				4FE079FF1FC3BC4B008A32D9 /* LaunchScreen.storyboard */,
@@ -437,7 +484,6 @@
 				4FE079EA1FC3BC4B008A32D9 /* Sources */,
 				4FE079EB1FC3BC4B008A32D9 /* Frameworks */,
 				4FE079EC1FC3BC4B008A32D9 /* Resources */,
-				644E28C4DDCA46F37E295FF9 /* [CP] Embed Pods Frameworks */,
 				A30255E82D5FBFBFAC483700 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -489,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE07A011FC3BC4B008A32D9 /* LaunchScreen.storyboard in Resources */,
+				0AC8FB5A21EF20BA005279A4 /* 附件.docx in Resources */,
 				4FE079FE1FC3BC4B008A32D9 /* Assets.xcassets in Resources */,
 				4FE079F91FC3BC4B008A32D9 /* Main.storyboard in Resources */,
 			);
@@ -497,21 +544,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		644E28C4DDCA46F37E295FF9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-回顾/Pods-回顾-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		83A432B59251AD66A319EDD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,7 +574,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -567,12 +600,15 @@
 				63458483204543D200790FF5 /* DLCardCell.m in Sources */,
 				1B4A09D720C0D93500F9A1F0 /* DLTimerCollectionViewCell.m in Sources */,
 				4FE07A251FC3BF03008A32D9 /* DLTopSuspensionViewController.m in Sources */,
+				0AC8FB5721EF19A0005279A4 /* DLOpenAttachmentViewController.m in Sources */,
 				0AEE96442111B31B00FA9D4F /* DLImageHeaderCell.m in Sources */,
+				0A6175E221F0612900ADC135 /* DLImageViewCollectionViewCell.m in Sources */,
 				63D48BE4200F2B3200EEF347 /* DLCustomDoubleViewController.m in Sources */,
 				63F8EE241FCCFA7A00EB2D12 /* UIColor+DLAddtion.m in Sources */,
 				63B6B3C020BF912900DEA117 /* DLSearchCollectionViewCell.m in Sources */,
 				63F8EE1D1FCCF25800EB2D12 /* BXChannelLabel.m in Sources */,
 				63F119E81FFC6A0000803301 /* DLBaiduMapViewController.m in Sources */,
+				0A6175E621F061D000ADC135 /* DLImageViewerFlowLayout.m in Sources */,
 				4FE07A041FC3BC4B008A32D9 /* main.m in Sources */,
 				0A20C166211296C600D631F2 /* DLCollectionBottomFlowLayout.m in Sources */,
 				63458480204542C900790FF5 /* DLPicLoopViewController.m in Sources */,
@@ -587,6 +623,7 @@
 				63F8EE271FCCFC8C00EB2D12 /* DLLinkageView.m in Sources */,
 				634348811FCBF8A000C9E4F2 /* DLIOS9MainViewController.m in Sources */,
 				634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */,
+				0A6175DF21F05E6500ADC135 /* DLImageViewerViewController.m in Sources */,
 				4FE079F31FC3BC4B008A32D9 /* AppDelegate.m in Sources */,
 				4FE07A1C1FC3BE9B008A32D9 /* DLTBImitationViewController.m in Sources */,
 				63B6B3C120BF912900DEA117 /* DLSearchTableViewCell.m in Sources */,
@@ -730,7 +767,7 @@
 				INFOPLIST_FILE = "回顾/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devil.www.----";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devil.www.-------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -747,7 +784,7 @@
 				INFOPLIST_FILE = "回顾/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devil.www.----";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devil.www.-------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

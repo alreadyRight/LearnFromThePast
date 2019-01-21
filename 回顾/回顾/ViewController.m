@@ -17,6 +17,8 @@
 #import "DLCustomDoubleViewController.h"
 #import "DLPicLoopViewController.h"
 #import "DLSearchViewController.h"
+#import "DLOpenAttachmentViewController.h"
+#import "DLImageViewerViewController.h"
 
 #import <LocalAuthentication/LocalAuthentication.h>
 
@@ -31,7 +33,7 @@ static NSString * const cellID = @"cellID";
 }
 
 - (void)setNormalData{
-    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"自定义弹出框",@"自定义弹出框双层夹心",@"图片轮播,中间图片放大",@"还在构思下一个~~"];
+    _titArray = @[@"仿淘宝详情页",@"collectionView联动",@"定时器循环播放",@"顶部悬浮",@"iOS9锁屏界面",@"好看的搜索界面",@"关于百度地图的一些事情",@"自定义弹出框",@"自定义弹出框双层夹心",@"图片轮播,中间图片放大",@"打开附件",@"图片浏览器",@"还在构思下一个~~"];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -183,6 +185,25 @@ static NSString * const cellID = @"cellID";
             [self.navigationController pushViewController:picLoopVC animated:YES];
             break;
         }
+		case 10:
+		{
+			DLOpenAttachmentViewController *attachmentVC = [[DLOpenAttachmentViewController alloc]init];
+			attachmentVC.attachmentName = @"附件.docx";
+			[self.navigationController pushViewController:attachmentVC animated:YES];
+			break;
+		}
+		case 11:
+		{
+			DLImageViewerViewController *imageVC = [[DLImageViewerViewController alloc]init];
+			imageVC.imageSource = @[
+									@"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1548054601&di=13173ee71f48e6787aaff370f03e04a2&src=http://pic1.win4000.com/wallpaper/2017-12-27/5a436a4338a3a.jpg",
+									@"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1548054601&di=13173ee71f48e6787aaff370f03e04a2&src=http://pic1.win4000.com/wallpaper/2017-12-27/5a436a4338a3a.jpg",
+									@"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1548054601&di=13173ee71f48e6787aaff370f03e04a2&src=http://pic1.win4000.com/wallpaper/2017-12-27/5a436a4338a3a.jpg",
+									@"https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1548054601&di=13173ee71f48e6787aaff370f03e04a2&src=http://pic1.win4000.com/wallpaper/2017-12-27/5a436a4338a3a.jpg",
+									];
+			[self.navigationController pushViewController:imageVC animated:YES];
+			break;
+		}
         default:
             break;
     }
