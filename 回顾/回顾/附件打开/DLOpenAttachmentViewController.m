@@ -22,7 +22,7 @@
 }
 
 - (void)readDocfile{
-	NSString * ducumentLocation = [[NSBundle mainBundle]pathForResource:self.attachmentName ofType:nil];
+	NSString * ducumentLocation = [[NSBundle mainBundle]pathForResource:@"测试11.doc" ofType:nil];
 	NSLog(@"%@",ducumentLocation);
 	NSURL *url = [NSURL fileURLWithPath:ducumentLocation];
 	

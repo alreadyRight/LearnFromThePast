@@ -1,4 +1,5 @@
 # LearnFromThePast
-I've done it in my project, and I've recorded it, and I'll look at it whenever I want to use it,
-Anyone who sees a lack of it wants me to point it out, not regularly updated, and now I'm a little busy
+
+
+    这边项目暂时不更新了,后面会整一个集合把这边的功能迁移过去,在新项目中集合这些常用的点
 

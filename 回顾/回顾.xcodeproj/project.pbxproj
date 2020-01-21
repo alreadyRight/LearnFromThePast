@@ -36,6 +36,8 @@
 		63458483204543D200790FF5 /* DLCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63458482204543D200790FF5 /* DLCardCell.m */; };
 		634584862045440E00790FF5 /* DLCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 634584852045440E00790FF5 /* DLCardFlowLayout.m */; };
 		634CFDAA2004583A008EC748 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */; };
+		63619EE62314C11C0038F1DD /* 111.doc in Resources */ = {isa = PBXBuildFile; fileRef = 63619EE52314C0E30038F1DD /* 111.doc */; };
+		63619EE82314C1E30038F1DD /* 测试11.doc in Resources */ = {isa = PBXBuildFile; fileRef = 63619EE72314C1E30038F1DD /* 测试11.doc */; };
 		63B6B3BF20BF912900DEA117 /* DLAlignmentFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BA20BF912900DEA117 /* DLAlignmentFlowLayout.m */; };
 		63B6B3C020BF912900DEA117 /* DLSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BC20BF912900DEA117 /* DLSearchCollectionViewCell.m */; };
 		63B6B3C120BF912900DEA117 /* DLSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B3BD20BF912900DEA117 /* DLSearchTableViewCell.m */; };
@@ -109,6 +111,8 @@
 		634584852045440E00790FF5 /* DLCardFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLCardFlowLayout.m; sourceTree = "<group>"; };
 		634CFDA82004583A008EC748 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		634CFDA92004583A008EC748 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		63619EE52314C0E30038F1DD /* 111.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 111.doc; sourceTree = "<group>"; };
+		63619EE72314C1E30038F1DD /* 测试11.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "测试11.doc"; sourceTree = "<group>"; };
 		63B6B3B620BF912900DEA117 /* DLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchViewController.h; sourceTree = "<group>"; };
 		63B6B3B820BF912900DEA117 /* DLSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchTableViewCell.h; sourceTree = "<group>"; };
 		63B6B3B920BF912900DEA117 /* DLSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSearchCollectionViewCell.h; sourceTree = "<group>"; };
@@ -228,7 +232,9 @@
 		4FE079F01FC3BC4B008A32D9 /* 回顾 */ = {
 			isa = PBXGroup;
 			children = (
+				63619EE52314C0E30038F1DD /* 111.doc */,
 				0AC8FB5921EF20BA005279A4 /* 附件.docx */,
+				63619EE72314C1E30038F1DD /* 测试11.doc */,
 				4FE079F11FC3BC4B008A32D9 /* AppDelegate.h */,
 				4FE079F21FC3BC4B008A32D9 /* AppDelegate.m */,
 				4FE079F41FC3BC4B008A32D9 /* ViewController.h */,
@@ -536,7 +542,9 @@
 			files = (
 				4FE07A011FC3BC4B008A32D9 /* LaunchScreen.storyboard in Resources */,
 				0AC8FB5A21EF20BA005279A4 /* 附件.docx in Resources */,
+				63619EE82314C1E30038F1DD /* 测试11.doc in Resources */,
 				4FE079FE1FC3BC4B008A32D9 /* Assets.xcassets in Resources */,
+				63619EE62314C11C0038F1DD /* 111.doc in Resources */,
 				4FE079F91FC3BC4B008A32D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +576,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-回顾/Pods-回顾-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-回顾/Pods-回顾-resources.sh",
 				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -579,7 +587,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-回顾/Pods-回顾-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-回顾/Pods-回顾-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
